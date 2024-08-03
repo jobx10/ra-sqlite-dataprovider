@@ -27,7 +27,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: out # This is the default output directory for next export
-       
+          token: ${{ secrets.GITHUB_TOKEN }}
           target_branch: gh-pages
           
      
